@@ -1,0 +1,13 @@
+let valor1, valor2, valor3, valor4, valor5, media;
+valor1 = prompt ("Digite o numero da  1 nota:");
+valor1 = parseFloat(valor1);
+valor2 = prompt ("Digite o numero da  2 nota:");
+valor2 = parseFloat(valor2);
+valor3 = prompt ("Digite o numero da  3 nota:");
+valor3= parseFloat(valor3);
+valor4 = prompt ("Digite o numero da  4 nota:");
+valor4 = parseFloat(valor4);
+valor5 = prompt ("Digite o numero da 5  nota:");
+valor5 = parseFloat(valor5);
+media=(valor1+valor2+valor3+valor4+valor5)/5;
+console.log ("Sua media é igual a " + media);
