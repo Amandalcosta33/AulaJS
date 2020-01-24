@@ -1,7 +1,13 @@
-let numb, a;
+let contador = 1 ;
+let a=1;
+let escolha;
 
-numb=prompt("Digite um valor: ");
+escolha=prompt("Digite um valor: ");
 
-for (a=0; a<numb; a++){
-    document.write(a);
+
+while (contador <=escolha) {
+    document.write("<br>" +a +"<br>");
+    a=a+1;
+    contador=contador+1;
+    
 }
