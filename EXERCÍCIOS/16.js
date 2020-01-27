@@ -1,28 +1,24 @@
-let numeroJogador, numeroComputador, a=0;
+let numeroJogador, numeroComputador;
 
 numeroComputador = Math.floor(Math.random(1,2) * 11);;
 
-numeroJogador=prompt("Tente adivinhar um numero de 1 a 10");
+for (let i=1; i<=3; i++){
 
-// switch (numeroJogador){
-//     case (numeroComputador==numeroJogador):
-//         document.write("PARABENS VOCÊ ACERTOU O NUMERO " +numeroComputador);
+    numeroJogador=prompt("Tente adivinhar um numero de 1 a 10");
     
-//     case (numeroJogador>numeroComputador):
-//         document.write("Seu numero esta acima do valor");
+    document.write("<br> tentativa " +i+ " = " +numeroJogador);
+    if (numeroComputador==numeroJogador){
+        document.write("<br> <br>  PARABENS VOCE ACERTOU E O NUMERO É " +numeroComputador);
+        document.write("<br> tentativa " +i+ " = " +numeroJogador);
+        break;
+    }  else  if (i==3){
+        document.write(" <br> TENTE NOVAMENTE APERTE F5, O NUMERO ERA " +numeroComputador);
+    } else if (numeroComputador>numeroJogador){
+        alert("Você esta abaixo do valor!");
+    } else if (numeroComputador<numeroJogador){
+        alert("Você esta acima do valor!");
+    } 
 
-//     case (numeroJogador<numeroComputador):
-// }
-
-while (numeroComputador!=numeroJogador || a<=3)
-{
-    if (numeroComputador>numeroJogador){
-        resposta=confirm("Seu número esá abaixo!");
-    } else {
-        resposta=confirm("Seu número esá acima!");
-    a++;
+    
 }
 
-    if (numeroComputador==numeroJogador){
-        document.write("PARABÉNS VOCÊ ACERTOU O  NÚMERO " +numeroComputador);
-    } 
