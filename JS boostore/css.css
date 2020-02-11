@@ -1,0 +1,68 @@
+body {
+
+background-image: linear-gradient( #c1433b, #4f1723);
+width: 100%;
+height: 758px;
+}
+
+header{
+    text-align: center;
+    height: 250px;
+
+}
+
+.logo{
+    width: 12%;
+}
+
+.formulario{
+    text-align: center;
+    color: white;
+    
+}
+
+.formulario input{
+    margin: 5px;
+    width: 30%;
+    height: 50px;
+    border-radius: 9px;
+    background-color: #612021;
+    border: none;
+
+}
+
+#esqueceu-senha{
+    margin-left: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+#botao{
+    background-color: #8a0130;
+    width: 25%;
+    height: 50px;
+    border-radius: 9px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:15%;  
+    margin: 20px;
+    height: 1px;
+  }
+
+  #redesociais{
+      margin: 20px;
+  }
+
+  #cadastre{
+      color: white;
+  }
